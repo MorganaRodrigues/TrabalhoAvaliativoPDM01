@@ -12,6 +12,7 @@ import Astronomos from './components/Astronomos';
 import Galeria from './components/Galeria';
 import Glossario from './components/Glossario';
 import Formulas from './components/Formulas';
+import Formulario from './components/Formulario';
 import Quiz from './components/Quiz';
 
 export default class App extends React.Component {
@@ -31,6 +32,7 @@ export default class App extends React.Component {
             <Stack.Screen name="Glossário" component={Glossario} />
             <Stack.Screen name="Fórmulas" component={Formulas} />
             <Stack.Screen name="Quiz" component={Quiz} />
+            <Stack.Screen name="Formulário" component={Formulario} />
           </Stack.Navigator>
         </NavigationContainer>
       </Container>
