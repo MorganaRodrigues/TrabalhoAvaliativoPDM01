@@ -279,7 +279,7 @@ export default class Formulas extends Component {
 
           <View>
             <Text style={styles.frasedepois}>
-              Clique no botão e vá para a página do formulário para testar essas
+              Clique no botão abaixo e vá para a página do formulário para testar essas
               fórmulas!
             </Text>
             <View style={styles.estiloDois} />
