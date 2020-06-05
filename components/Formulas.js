@@ -19,37 +19,7 @@ import {
 import { StyleSheet, View, Image } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-export default class PaginaDetalhe extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      num1: null,
-      num2: null,
-      total: null,
-      operacao: 'itemUm',
-    };
-  }
-
-  calcular = () => {
-    let calc = 0;
-    console.log(this.state.operacao);
-
-    if (this.state.operacao == 'itemUm') {
-      calc = parseInt(this.state.num1) / parseInt(this.state.num2);
-    } else if (this.state.operacao == 'itemDois') {
-      calc = parseInt(this.state.num1) / parseInt(this.state.num2);
-    } else if (this.state.operacao == 'itemTres') {
-      calc = parseInt(this.state.num1) / parseInt(this.state.num2);
-    } else if (this.state.operacao == 'itemQuat') {
-      calc = parseInt(this.state.num1) / parseInt(this.state.num2);
-    }
-    this.setState({
-      total: calc,
-    });
-
-    console.log(this.state.num1);
-  };
-
+export default class Formulas extends Component {
   render() {
     const secUm = {
       uri:
@@ -72,8 +42,8 @@ export default class PaginaDetalhe extends Component {
                   interessados em Astronomia.
                 </Text>
                 <Body>
-                    <Icon name="calculator" size={25} color="black" />
-                  </Body>
+                  <Icon name="calculator" size={25} color="black" />
+                </Body>
                 <Body>
                   <Text style={styles.fraseuf}>
                     Você pode testá-las! Mas, primeiro conheça as fórmulas
@@ -143,7 +113,7 @@ export default class PaginaDetalhe extends Component {
           <View style={styles.estiloUm} />
 
           <Card>
-            <CardItem style={styles.cortres}>
+            <CardItem style={styles.cordois}>
               <Body>
                 <Text style={styles.numeros}>2.</Text>
                 <Body>
@@ -198,7 +168,7 @@ export default class PaginaDetalhe extends Component {
           <View style={styles.estiloUm} />
 
           <Card>
-            <CardItem style={styles.corquatro}>
+            <CardItem style={styles.cordois}>
               <Body>
                 <Text style={styles.numeros}>3.</Text>
                 <Body>
@@ -254,7 +224,7 @@ export default class PaginaDetalhe extends Component {
           <View style={styles.estiloUm} />
 
           <Card>
-            <CardItem style={styles.corcinco}>
+            <CardItem style={styles.cordois}>
               <Body>
                 <Text style={styles.numeros}>4.</Text>
                 <Body>
@@ -309,83 +279,18 @@ export default class PaginaDetalhe extends Component {
 
           <View>
             <Text style={styles.frasedepois}>
-              Escolha qual das fórmulas você vai utilizar para o cálculo e em
-              seguida digite os valores:
+              Clique no botão e vá para a página do formulário para testar essas
+              fórmulas!
             </Text>
             <View style={styles.estiloDois} />
           </View>
 
-          <Form style={styles.corform}>
-            <ListItem>
-              <Left>
-                <Text>Aumento</Text>
-              </Left>
-              <Right>
-                <Radio
-                  onPress={() => this.setState({ operacao: 'itemUm' })}
-                  selected={this.state.operacao == 'itemUm'}
-                />
-              </Right>
-            </ListItem>
-            <ListItem>
-              <Left>
-                <Text>Luminosidade</Text>
-              </Left>
-              <Right>
-                <Radio
-                  onPress={() => this.setState({ operacao: 'itemDois' })}
-                  selected={this.state.operacao == 'itemDois'}
-                />
-              </Right>
-            </ListItem>
-            <ListItem>
-              <Left>
-                <Text>Campo real</Text>
-              </Left>
-              <Right>
-                <Radio
-                  onPress={() => this.setState({ operacao: 'itemTres' })}
-                  selected={this.state.operacao == 'itemTres'}
-                />
-              </Right>
-            </ListItem>
-            <ListItem>
-              <Left>
-                <Text>Pupila de saída</Text>
-              </Left>
-              <Right>
-                <Radio
-                  onPress={() => this.setState({ operacao: 'itemQuat' })}
-                  selected={this.state.operacao == 'itemQuat'}
-                />
-              </Right>
-            </ListItem>
-
-            <Item floatingLabel>
-              <Label> Numerador</Label>
-              <Input
-                name="num1"
-                onChangeText={(text) => this.setState({ num1: text })}
-              />
-            </Item>
-            <Item floatingLabel last>
-              <Label>Denominador</Label>
-              <Input
-                name="num2"
-                onChangeText={(text) => this.setState({ num2: text })}
-              />
-            </Item>
-            <View style={styles.estiloTres} />
-            <Text style={styles.resultado}>
-              {'    '}O seu resultado é: {this.state.total}
-            </Text>
-            <View style={styles.estiloTres} />
-
-            <Button full onPress={() => this.calcular()} style={styles.botao}>
-              <Text>CALCULAR</Text>
-            </Button>
-            <View style={styles.estiloTres} />
-          </Form>
+          <Button
+            full
+            onPress={() => this.props.navigation.navigate('Formulário')}
+            style={styles.botaod}>
+            <Text style={styles.textobotao}>FORMULÁRIO</Text>
+          </Button>
 
           <Button
             full
@@ -406,21 +311,15 @@ const styles = StyleSheet.create({
   organiza: {
     backgroundColor: '#000',
   },
-  corform: {
-    backgroundColor: '#e0e0e0',
-  },
   botaod: {
     backgroundColor: '#8a7df3',
-    marginTop: 40,
+    marginTop: 20,
   },
   estiloUm: {
     marginTop: 20,
   },
   estiloDois: {
     marginTop: 10,
-  },
-  estiloTres: {
-    marginTop: 30,
   },
   fraseuf: {
     color: '#000',
@@ -435,9 +334,6 @@ const styles = StyleSheet.create({
     fontSize: 17,
     textAlign: 'center',
   },
-  botao: {
-    backgroundColor: '#8a7df3',
-  },
 
   fraseum: {
     color: '#000',
@@ -447,22 +343,11 @@ const styles = StyleSheet.create({
   },
 
   corum: {
-    backgroundColor: '#cfc8f9',
+    backgroundColor: '#eeeeee',
   },
 
   cordois: {
-    backgroundColor: '#E2FDF8',
-  },
-  cortres: {
-    backgroundColor: '#fce7ec',
-  },
-
-  corquatro: {
-    backgroundColor: '#e7fced',
-  },
-
-  corcinco: {
-    backgroundColor: '#f8e8fc',
+    backgroundColor: '#eeeeee',
   },
 
   frasedois: {
