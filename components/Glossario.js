@@ -397,7 +397,7 @@ const styles = StyleSheet.create({
   fraseinicial: {
     color: '#000',
     textBold: true,
-    fontSize: 16,
+    fontSize: 15,
     textAlign: 'center',
   },
   estiloUm: {
