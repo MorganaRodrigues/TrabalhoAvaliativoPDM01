@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     color: '#fff',
     textBold: true,
     fontStyle: 'italic',
-    fontSize: 35,
+    fontSize: 40,
     textAlign: 'center',
   },
 });
