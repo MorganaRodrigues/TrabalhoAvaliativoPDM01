@@ -369,21 +369,21 @@ const styles = StyleSheet.create({
   },
 
   cor: {
-    backgroundColor: '#9ec2f8',
+    backgroundColor: '#8a7df3',
   },
   cori: {
-    backgroundColor: '#c2d9fb',
+    backgroundColor: '#8a7df3',
   },
   corf: {
-    backgroundColor: '#c2d9fb',
+    backgroundColor: '#8a7df3',
     width: 355,
     height: 90,
   },
   corcard: {
-    backgroundColor: '#ede8fd',
+    backgroundColor: '#eeeeee',
   },
   est: {
-    backgroundColor: '#F4F2FA',
+    backgroundColor: '#fff',
   },
 
   frasefinal: {
