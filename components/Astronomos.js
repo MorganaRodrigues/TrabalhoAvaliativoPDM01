@@ -79,11 +79,11 @@ export default class Astronomos extends Component {
           <View style={styles.estiloUm} />
 
           <Card>
-            <CardItem header style={styles.cardhub}>
+            <CardItem header style={styles.card}>
               <Text>Edwin Powell Hubble (1889-1953)</Text>
 
               <Right>
-                <Icon name="telescope" size={25} color="#616161" />
+                <Icon name="telescope" size={25} color="#000" />
               </Right>
             </CardItem>
             <CardItem style={styles.cardcor}>
@@ -93,7 +93,7 @@ export default class Astronomos extends Component {
                 </View>
               </Body>
             </CardItem>
-            <CardItem footer style={styles.corhub}>
+            <CardItem footer style={styles.cor}>
               <Text style={styles.frasefim}>
                 Edwin Powell Hubble foi um astrônomo estadunidense famoso por
                 ter descoberto que as até então chamadas nebulosas eram na
@@ -107,7 +107,7 @@ export default class Astronomos extends Component {
           <View style={styles.estiloUm} />
 
           <Card>
-            <CardItem header style={styles.cardcop}>
+            <CardItem header style={styles.card}>
               <Text>Nicolau Copérnico (1473-1543)</Text>
               <Right>
                 <Icon name="star" size={25} color="#FFD740" />
@@ -120,7 +120,7 @@ export default class Astronomos extends Component {
                 </View>
               </Body>
             </CardItem>
-            <CardItem footer style={styles.corcop}>
+            <CardItem footer style={styles.cor}>
               <Text style={styles.frasefim}>
                 Nicolau Copérnico foi um astrônomo e matemático polonês que
                 desenvolveu a teoria heliocêntrica do Sistema Solar. Foi também
@@ -132,10 +132,10 @@ export default class Astronomos extends Component {
           <View style={styles.estiloUm} />
 
           <Card>
-            <CardItem header style={styles.cardisa}>
+            <CardItem header style={styles.card}>
               <Text>Isaac Newton (1643-1727)</Text>
               <Right>
-                <Icon name="alien" size={25} color="#00a84b" />
+                <Icon name="alien" size={25} color="#9cea2a" />
               </Right>
             </CardItem>
             <CardItem style={styles.cardcor}>
@@ -145,7 +145,7 @@ export default class Astronomos extends Component {
                 </View>
               </Body>
             </CardItem>
-            <CardItem footer style={styles.corisa}>
+            <CardItem footer style={styles.cor}>
               <Text style={styles.frasefim}>
                 Isaac Newton foi um astrônomo, alquimista, filósofo natural,
                 teólogo e cientista inglês, mais reconhecido como físico e
@@ -158,10 +158,10 @@ export default class Astronomos extends Component {
           <View style={styles.estiloUm} />
 
           <Card>
-            <CardItem header style={styles.cardkep}>
+            <CardItem header style={styles.card}>
               <Text>Johannes Kepler (1571-1630)</Text>
               <Right>
-                <Icon name="atom" size={25} color="#8131c3" />
+                <Icon name="atom" size={25} color="#e7acff" />
               </Right>
             </CardItem>
             <CardItem style={styles.cardcor}>
@@ -171,7 +171,7 @@ export default class Astronomos extends Component {
                 </View>
               </Body>
             </CardItem>
-            <CardItem footer style={styles.corkep}>
+            <CardItem footer style={styles.cor}>
               <Text style={styles.frasefim}>
                 Johannes Kepler foi um astrônomo, astrólogo e matemático alemão.
                 Considerado figura-chave da revolução científica do século XVII,
@@ -183,10 +183,10 @@ export default class Astronomos extends Component {
           <View style={styles.estiloUm} />
 
           <Card>
-            <CardItem header style={styles.cardlei}>
+            <CardItem header style={styles.card}>
               <Text>Galileu Galilei (1564-1642)</Text>
               <Right>
-                <Icon name="earth" size={25} color="#e49e22" />
+                <Icon name="earth" size={25} color="#b2ebf2" />
               </Right>
             </CardItem>
             <CardItem style={styles.cardcor}>
@@ -196,7 +196,7 @@ export default class Astronomos extends Component {
                 </View>
               </Body>
             </CardItem>
-            <CardItem footer style={styles.corlei}>
+            <CardItem footer style={styles.cor}>
               <Text style={styles.frasefim}>
                 Galileu Galilei foi um importante astrônomo, físico e matemático
                 italiano. Ele é considerado um marco da revolução científica nas
@@ -209,10 +209,10 @@ export default class Astronomos extends Component {
           <View style={styles.estiloUm} />
 
           <Card>
-            <CardItem header style={styles.cardhel}>
+            <CardItem header style={styles.card}>
               <Text>William Herschel (1738-1822)</Text>
               <Right>
-                <Icon name="satellite-variant" size={25} color="#008b92" />
+                <Icon name="satellite-variant" size={25} color="#eeeeee" />
               </Right>
             </CardItem>
             <CardItem style={styles.cardcor}>
@@ -222,7 +222,7 @@ export default class Astronomos extends Component {
                 </View>
               </Body>
             </CardItem>
-            <CardItem footer style={styles.corhel}>
+            <CardItem footer style={styles.cor}>
               <Text style={styles.frasefim}>
                 William Herschel foi um astrônomo e compositor alemão
                 naturalizado inglês. Aos 19 anos mudou-se para a Inglaterra onde
@@ -271,70 +271,20 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   frasedepois: {
-    color: '#010b9b',
+    color: '#000',
     fontStyle: 'italic',
     textBold: true,
     fontSize: 18,
     textAlign: 'center',
   },
-  cardhub: {
+  card: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#9EF3E1',
+    backgroundColor: '#8a7df3',
   },
 
-  corhub: {
-    backgroundColor: '#E2FDF8',
-  },
-
-  cardcop: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#f39eb0',
-  },
-
-  corcop: {
-    backgroundColor: '#fce7ec',
-  },
-
-  cardisa: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#9ef3b6',
-  },
-
-  corisa: {
-    backgroundColor: '#e7fced',
-  },
-
-  cardkep: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#e19ef3',
-  },
-
-  corkep: {
-    backgroundColor: '#f8e8fc',
-  },
-
-  cardlei: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#f3ee9e',
-  },
-
-  corlei: {
-    backgroundColor: '#fcfbe7',
-  },
-
-  cardhel: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#9ef0f3',
-  },
-
-  corhel: {
-    backgroundColor: '#d9f9fb',
+  cor: {
+    backgroundColor: '#eeeeee',
   },
 
   cardimagem: {
@@ -346,7 +296,7 @@ const styles = StyleSheet.create({
   },
 
   corum: {
-    backgroundColor: '#cfc8f9',
+    backgroundColor: '#eeeeee',
   },
 
   frasefim: {
