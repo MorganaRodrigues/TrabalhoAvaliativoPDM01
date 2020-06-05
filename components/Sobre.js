@@ -73,10 +73,10 @@ export default class RingsOfSaturn extends Component {
               expandedIconStyle={{ color: 'black' }}
               dataArray={dataArray}
               contentStyle={{
-                backgroundColor: '#ede8fd',
+                backgroundColor: '#fff',
                 textAlign: 'justify',
               }}
-              headerStyle={{ backgroundColor: '#cfc8f9' }}
+              headerStyle={{ backgroundColor: '#eeeeee' }}
             />
           </View>
 
@@ -180,7 +180,7 @@ const styles = StyleSheet.create({
   },
 
   estiloDois: {
-    backgroundColor: '#e0e0e0',
+    backgroundColor: '#eeeeee',
   },
 
   frasedepois: {
