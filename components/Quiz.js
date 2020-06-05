@@ -152,7 +152,7 @@ export default class Quiz extends Component {
             </View>
             <View style={styles.espacod} />
 
-            <View style={styles.um}>
+            <View style={styles.cor}>
               <Text style={styles.branco}>
                 Qual dos planetas abaixo não possui lua?
               </Text>
@@ -172,7 +172,7 @@ export default class Quiz extends Component {
               <Button
                 onPress={this.cliqueUm}
                 title="RESPOSTA"
-                color="#4946e7"
+                color="#8a7df3"
               />
 
               <View style={styles.espaco} />
@@ -180,7 +180,7 @@ export default class Quiz extends Component {
 
             <View style={styles.espaco} />
 
-            <View style={styles.dois}>
+            <View style={styles.cor}>
               <Text style={styles.branco}>
                 Quais são os únicos planetas gasosos?
               </Text>
@@ -200,13 +200,13 @@ export default class Quiz extends Component {
               <Button
                 onPress={this.cliqueDois}
                 title="RESPOSTA"
-                color="#4946e7"
+                color="#8a7df3"
               />
 
               <View style={styles.espaco} />
             </View>
 
-            <View style={styles.tres}>
+            <View style={styles.cor}>
               <Text style={styles.branco}>
                 Qual planeta tem 1/3 da gravidade da Terra?
               </Text>
@@ -226,13 +226,13 @@ export default class Quiz extends Component {
               <Button
                 onPress={this.cliqueTres}
                 title="RESPOSTA"
-                color="#4946e7"
+                color="#8a7df3"
               />
 
               <View style={styles.espaco} />
             </View>
 
-            <View style={styles.quatro}>
+            <View style={styles.cor}>
               <Text style={styles.branco}>
                 Qual é o quinto maior planeta do Sistema Solar?
               </Text>
@@ -252,13 +252,13 @@ export default class Quiz extends Component {
               <Button
                 onPress={this.cliqueQuatro}
                 title="RESPOSTA"
-                color="#4946e7"
+                color="#8a7df3"
               />
 
               <View style={styles.espaco} />
             </View>
 
-            <View style={styles.cinco}>
+            <View style={styles.corcinco}>
               <Text style={styles.branco}>
                 Por quantos quilômetros estendem-se os anéis de Saturno?
               </Text>
@@ -278,13 +278,13 @@ export default class Quiz extends Component {
               <Button
                 onPress={this.cliqueCinco}
                 title="RESPOSTA"
-                color="#4946e7"
+                color="#8a7df3"
               />
 
               <View style={styles.espaco} />
             </View>
 
-            <View style={styles.seis}>
+            <View style={styles.corseis}>
               <Text style={styles.branco}>
                 Que planeta possui 27 luas (todas com nomes de personagens de
                 Shakespeare)?
@@ -305,7 +305,7 @@ export default class Quiz extends Component {
               <Button
                 onPress={this.cliqueSeis}
                 title="RESPOSTA"
-                color="#4946e7"
+                color="#8a7df3"
               />
 
               <View style={styles.espaco} />
@@ -317,7 +317,6 @@ export default class Quiz extends Component {
             full
             success
             onPress={() => this.props.navigation.goBack()}
-            style={styles.botao}
             title="VOLTAR"
             color="#8a7df3"
           />
@@ -335,50 +334,26 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#000',
   },
-  um: {
+  cor: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#e2fdf8',
+    backgroundColor: '#eeeeee',
     width: 345,
     height: 315,
     marginTop: 10,
   },
-  dois: {
+  corcinco: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#fce7ec',
-    width: 345,
-    height: 315,
-    marginTop: 10,
-  },
-  tres: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#e7fced',
-    width: 345,
-    height: 315,
-    marginTop: 10,
-  },
-  quatro: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#f8e8fc',
-    width: 345,
-    height: 315,
-    marginTop: 10,
-  },
-  cinco: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#fcfbe7',
+    backgroundColor: '#eeeeee',
     width: 345,
     height: 250,
     marginTop: 10,
   },
-  seis: {
+  corseis: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#d9f9fb',
+    backgroundColor: '#eeeeee',
     width: 345,
     height: 325,
     marginTop: 10,
@@ -390,7 +365,7 @@ const styles = StyleSheet.create({
   inicio: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#eeeeee',
     width: 360,
     height: 100,
   },
