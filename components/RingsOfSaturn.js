@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
   },
 
   botaod: {
-    backgroundColor: '#ede8fd',
+    backgroundColor: '#eeeeee',
     marginTop: 10,
   },
 
