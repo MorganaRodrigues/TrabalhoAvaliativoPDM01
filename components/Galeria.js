@@ -174,7 +174,7 @@ const styles = StyleSheet.create({
   organizacard: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#ede8fd',
+    backgroundColor: '#eeeeee',
   },
 
   organiza: {
@@ -193,7 +193,7 @@ const styles = StyleSheet.create({
   },
 
   cor: {
-    backgroundColor: '#cfc8f9',
+    backgroundColor: '#eeeeee',
   },
 
   botao: {
